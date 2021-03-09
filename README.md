@@ -16,4 +16,4 @@ The code requires the following libraries to be installed:
 -  opencv 4.4.0.44
 -  numpy 1.18.5
 
-
+The code requires YOLOv4 and OpenPose models to be installed. Refer to https://github.com/CMU-Perceptual-Computing-Lab/openpose and https://github.com/CMU-Perceptual-Computing-Lab/openpose for installation instructions.
