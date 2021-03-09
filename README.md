@@ -7,3 +7,7 @@ This repository contains code for automatic social distance estimation from sing
 3. [Installation](#installation)
 4. [Quick Usage](#quick-usage)
 5. [Citation](#citation)
+
+## Getting Started
+### Lorem ipsum
+
