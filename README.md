@@ -18,6 +18,7 @@ The code requires the following libraries to be installed:
 
 The code requires YOLOv4 and OpenPose models to be installed. Refer to https://github.com/AlexeyAB/darknet and https://github.com/CMU-Perceptual-Computing-Lab/openpose for installation instructions. After installations, download the 3 scripts automatic_evaluation_API.py, evaluate_labeled_images.py and evaluate_unlabeled_images.py. After installations, the project folder should look like:
 
+```sh
 ${project_dir}/
 ├── labels
 │   ├── body_pixel_locations.csv
@@ -87,4 +88,4 @@ ${project_dir}/
 ├── pyopenpose.exp
 ├── pyopenpose.lib
 ├── VCRUNTIME140.dll
-
+```
