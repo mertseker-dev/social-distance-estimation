@@ -1,5 +1,5 @@
 # social-distance-estimation
-This repository contains code for automatic social distance estimation from single RGB images by using YOLOv4 object detector and OpenPose human pose estimator. 
+This repository contains code and tutorial for automatic social distance estimation from single RGB images by using YOLOv4 object detector and OpenPose human pose estimator. 
 ## Contents
 1. [Getting Started](#getting-started)
 1. [Installation](#installation)
