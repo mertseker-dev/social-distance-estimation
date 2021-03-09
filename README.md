@@ -9,5 +9,11 @@ This repository contains code for automatic social distance estimation from sing
 5. [Citation](#citation)
 
 ## Getting Started
-### Lorem ipsum
+The code requires the following libraries to be installed:
+
+-  python 3.8
+-  tensorflow 2.3.1
+-  opencv 4.4.0.44
+-  numpy 1.18.5
+
 
