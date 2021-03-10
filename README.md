@@ -103,6 +103,8 @@ The annotations are found in 3 seperate .csv files: body_pixel_locations.csv, ca
 
 ## Distance Evaluation on Annotated Data
 
+# Usage:
+
 In order to run the code on annotated data (images with annotations), run the following command:
 
 ```sh
@@ -117,5 +119,8 @@ $ python evaluate_labeled_images.py -r=[PATH_TO_IMAGES, SENSOR_WIDTH, SENSOR_HEI
 
 If you wish to run the code on the dataset we provide, please enter *36* for SENSOR_WIDTH and *24* for SENSOR_HEIGHT and do not enter any value for FOCAL_LENGTH.
 
+# Output format:
+
+Lorem ipsum
 
 
