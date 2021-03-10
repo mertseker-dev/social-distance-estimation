@@ -2,7 +2,7 @@
 This repository contains code and tutorial for automatic social distance estimation from single RGB images by using YOLOv4 object detector and OpenPose human pose estimator. 
 ## Contents
 1. [Getting Started](#getting-started)
-2. [Dataset & Annotations](#dataset)
+2. [Dataset & Annotations](#dataset-annotations)
 3. [Distance Evaluation on Annotated Data](#annotated)
 4. [Distance Evaluation on Unannotated Data](#unannotated)
 5. [Installation](#installation)
