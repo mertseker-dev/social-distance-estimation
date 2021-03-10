@@ -7,8 +7,9 @@ This repository contains code and tutorial for automatic social distance estimat
 4. [Distance Evaluation on Unannotated Data](#distance-evaluation-on-unannotated-data)
 5. [Adding Your Own Annotated Images](#adding-your-own-annotated-images)
 6. [Testing Your Own Method](#testing-your-own-method)
-7. [Quick Usage](#quick-usage)
-8. [Citation](#citation)
+7. [Results](#results)
+8. [References](#references)
+
 
 ## Getting Started
 The code requires the following libraries to be installed:
@@ -125,6 +126,7 @@ The outputs of the evaluation will automatically be written in a csv. file with 
 
 ## Distance Evaluation on Unannotated Data
 
+You can run our method on any image as long as sensor dimensions and focal length information of the camera that was used to capture the image are known.
 In order to run the code on unannotated data (images without annotations), run the following command:
 
 ### Usage
@@ -151,8 +153,17 @@ After adding the annotations to the three .csv files under the folder 'labels' b
 
 ## Testing Your Own Method
 
-If you have your own method that can output 3D location estimations for the people or the distance between the people in images, you may evaluate your method by using our dataset (download link in [Dataset and Annotations](#dataset-and-annotations)). You may also add your own images for evaluation, but be sure to correctly annotate each image by following the directions in  [Adding Your Own Annotated Images](#adding-your-own-annotated-images). Your method should be able to provide the pixel location of at least 1 of the 4 following body parts for each detected person: center of eyes, torso, shoulders or head. These pixel locations are required in order to match the automatically detected people with the annotated people.
+If you have your own method that can output 3D location estimations for the people or the distance between the people in images, you may evaluate your method by using our dataset (download link in [Dataset and Annotations](#dataset-and-annotations)). You may also add your own images for evaluation, but be sure to correctly annotate each image by following the directions in  [Adding Your Own Annotated Images](#adding-your-own-annotated-images). Your method should be able to provide the pixel locations of at least 1 of the 4 following body parts for each detected person: center of eyes, torso, shoulders or head. These pixel locations are required in order to match the automatically detected people with the annotated people. Please note that if you wish to evaluate your method on your own added images, make sure that your method can output at least 1 of the body parts that you annotated. As an example, if you only annotated the center of torsos and your method only outputs the center of heads, the code will not work.
 
-All of the necessary code for automatically evaluating your own method on our dataset or on your own annotated images can be found in the file 'automatic_evaluation_API.py'
+All of the necessary code for automatically evaluating your own method on our dataset or on your own annotated images can be found in the file 'automatic_evaluation_API.py'.
 
-If your method outputs 3D location estimations for each detected people, you may use the function *automatic_evaluate()*
+If your method outputs 3D location estimations for each detected people, you may use the function *automatic_evaluate()* and if your method outputs the distances between people, you may use the function *automatic_evaluate_2()*. Further explanations and example use cases are included within the file 'automatic_evaluation_API.py'.
+
+## Results
+
+Out of all the detected people, our method was able to achieve a 28.8% average error in pair-wise distance estimations when we evaluated it on our own annotated dataset. Furthermore, 92% of the people in the images were detected. 
+
+## References
+
+- YOLOv4: https://github.com/AlexeyAB/darknet
+- OpenPose: https://github.com/CMU-Perceptual-Computing-Lab/openpose
