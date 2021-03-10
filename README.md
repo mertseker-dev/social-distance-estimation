@@ -94,12 +94,10 @@ ${project_dir}/
 ## Dataset & Annotations
 
 - **Dataset**: 
-- 
 We provide an annotated image dataset for testing purposes that can be used to evaluate our method and also any other social distance estimation method that can either output 3D location estimations for the people or the distance between the people. The images and the annotations can be downloaded from here: LINK. 
 
 - **Annotations**:
-
-Lorem ipsum
+The annotations are found in 3 seperate .csv files: body_pixel_locations.csv, camera_locations_photoshoot_identifiers.csv and ground_truth_locations.csv. Please download these .csv files from the link above and put all of them under a directory named 'labels' under your main project directory. Refer to the project directory schema above for clarity.  
 
 
 
