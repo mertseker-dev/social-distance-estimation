@@ -151,7 +151,7 @@ After adding the annotations to the three .csv files under the folder 'labels' b
 
 ## Testing Your Own Method
 
-If you have your own method that can output 3D location estimations for the people or the distance between the people in images, you may evaluate your method by using our dataset (download link in [Dataset and Annotations](#dataset-and-annotations). You may also add your own images for evaluation, but be sure to correctly annotate each image by following the directions in  [Adding Your Own Annotated Images](#adding-your-own-annotated-images). Your method should be able to provide the pixel location of at least 1 of the 4 following body parts for each detected person: center of eyes, torso, shoulders or head. These pixel locations are required in order to match the automatically detected people with the annotated people.
+If you have your own method that can output 3D location estimations for the people or the distance between the people in images, you may evaluate your method by using our dataset (download link in [Dataset and Annotations](#dataset-and-annotations)). You may also add your own images for evaluation, but be sure to correctly annotate each image by following the directions in  [Adding Your Own Annotated Images](#adding-your-own-annotated-images). Your method should be able to provide the pixel location of at least 1 of the 4 following body parts for each detected person: center of eyes, torso, shoulders or head. These pixel locations are required in order to match the automatically detected people with the annotated people.
 
 All of the necessary code for automatically evaluating your own method on our dataset or on your own annotated images can be found in the file 'automatic_evaluation_API.py'
 
