@@ -124,7 +124,7 @@ The outputs of the evaluation will automatically be written in a csv. file with 
 
 ## Distance Evaluation on Unannotated Data
 
-In order to run the code on annotated data (images with annotations), run the following command:
+In order to run the code on unannotated data (images without annotations), run the following command:
 
 ### Usage
 
@@ -132,4 +132,4 @@ In order to run the code on annotated data (images with annotations), run the fo
 $ python evaluate_unlabeled_images.py -r=[PATH_TO_IMAGES, SENSOR_WIDTH, SENSOR_HEIGHT, SCALE_PERCENT, SAFE_DISTANCE, FOCAL_LENGTH]
 ```
 
-Explanations for the parameters are the same as above. Note that SENSOR_WIDTH and SENSOR_HEIGHT parameters are mandatory, with FOCAL_LENGTH being optional. Usually, focal length information is included in the metadata of each image. If this is not the case for the images you are evaluating, please also provide FOCAL_LENGTH as a parameter. SENSOR_WIDTH. SENSOR_HEIGHT and FOCAL_LENGTH parameters are all in mm units and they apply to all of the images in PATH_TO_IMAGES. This means that all of the images under PATH_TO_IMAGES must have the same sensor width and sensor height and also same focal length only if FOCAL_LENGTH is provided. If FOCAL_LENGTH is not provided, the focal length information must be present in the metadata of each image and in that case, it is allowed to have different images with different focal lengths under PATH_TO_IMAGES. If you wish to evaluate images with different sensor dimensions, please categorize them by their sensor dimensions and put them under separate folders. Then, run the code for each separate folder.
+Explanations for the parameters are the same as above. Note that SENSOR_WIDTH and SENSOR_HEIGHT parameters are mandatory, with FOCAL_LENGTH being optional. Usually, focal length information is included in the metadata of each image. If this is not the case for the images you are evaluating, please also provide FOCAL_LENGTH as a parameter. SENSOR_WIDTH, SENSOR_HEIGHT and FOCAL_LENGTH parameters are all in mm units and they apply to all of the images in PATH_TO_IMAGES. This means that all of the images under PATH_TO_IMAGES must have the same sensor width and sensor height and also same focal length only if FOCAL_LENGTH is provided. If FOCAL_LENGTH is not provided, the focal length information must be present in the metadata of each image and in that case, it is allowed to have different images with different focal lengths under PATH_TO_IMAGES. If you wish to evaluate images with different sensor dimensions, please categorize them by their sensor dimensions and put them under separate folders. Then, run the code for each separate folder.
