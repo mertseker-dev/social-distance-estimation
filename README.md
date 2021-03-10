@@ -111,11 +111,11 @@ In order to run the code on annotated data (images with annotations), run the fo
 $ python evaluate_labeled_images.py -r=[PATH_TO_IMAGES, SENSOR_WIDTH, SENSOR_HEIGHT, SCALE_PERCENT, SAFE_DISTANCE, FOCAL_LENGTH]
 ```
 - PATH_TO_IMAGES (mandatory): Path to the folder that contains the images to be evaluated.
-- SENSOR_WIDTH (mandatory): Sensor width of the camera(s) that were used to capture the images in PATH_TO_IMAGES, should be in mm units
-- SENSOR_HEIGHT (mandatory): Sensor height of the camera(s) that were used to capture the images in PATH_TO_IMAGES, should be in mm units
-- SCALE_PERCENT (mandatory): Integer between 0-100. 100 for no scaling, 50 for 50% downscaling etc. of the images before evaluation
-- SAFE_DISTANCE (mandatory): Safe distance threshold for pair-wise distances. Any estimated pair-wise distance that is under this threshold will be regarded as a violation and it will be reported under the results. Should be in mm units
-- FOCAL_LENGTH (optional): Focal length of the camera(s) that were used to capture the images in PATH_TO_IMAGES, should be in mm units
+- SENSOR_WIDTH (mandatory): Sensor width of the camera(s) that were used to capture the images in PATH_TO_IMAGES, should be in mm units.
+- SENSOR_HEIGHT (mandatory): Sensor height of the camera(s) that were used to capture the images in PATH_TO_IMAGES, should be in mm units.
+- SCALE_PERCENT (mandatory): Integer between 0-100. 100 for no scaling, 50 for 50% downscaling etc. of the images before evaluation.
+- SAFE_DISTANCE (mandatory): Safe distance threshold for pair-wise distances. Any estimated pair-wise distance that is under this threshold will be regarded as a violation and it will be reported under the results. Should be in mm units.
+- FOCAL_LENGTH (optional): Focal length of the camera(s) that were used to capture the images in PATH_TO_IMAGES, should be in mm units.
 
 If you wish to run the code on the dataset we provide, please enter *36* for SENSOR_WIDTH and *24* for SENSOR_HEIGHT and do not enter any value for FOCAL_LENGTH.
 
