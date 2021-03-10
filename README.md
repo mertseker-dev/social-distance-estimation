@@ -142,4 +142,4 @@ The outputs of the evaluation will automatically be written in a csv. file with 
 
 It is possible to add your own images to the dataset. Please follow the following annotation format and add the necessary information for each image in all three .csv files under the folder 'labels'. Illustration of how each of these files should look like can be seen below:
 
-<img src="github_images/dataset_labels_explanation.png" width="100>
+<img src="https://user-images.githubusercontent.com/79134040/110604226-81546e80-8190-11eb-94fa-86dbe12331ec.png" width="100">
