@@ -120,7 +120,7 @@ $ python evaluate_labeled_images.py -r=[PATH_TO_IMAGES, SENSOR_WIDTH, SENSOR_HEI
 If you wish to run the code on the dataset we provide, please enter *36* for SENSOR_WIDTH and *24* for SENSOR_HEIGHT and do not enter any value for FOCAL_LENGTH.
 
 ### Output format
-The outputs of the evaluation will automatically be written in a csv. file with a unique timestamp name under the folder "outputs_labeled_data". The naming format of the files are: "YYYYMMDD-HHMMSS.csv". The output file contains the following information for each image: filename, number of detected people, every estimated pair-wise distance, average estimated pair-wise distance, average pair-wise percentual distance estimation error (obtained by comparing the estimated pair-wise distances with ground truth pair-wise distances), number of violations, person detection rate and false discovery rate for the people. All of the units are in mm.
+The outputs of the evaluation will automatically be written in a csv. file with a unique timestamp name under the folder "outputs_labeled_data". The naming format of the files are: "YYYYMMDD-HHMMSS.csv". The output file contains the following information for each image: filename, number of detected people, every estimated pair-wise distance, average estimated pair-wise distance, average pair-wise percentual distance estimation error (obtained by comparing the estimated pair-wise distances with ground truth pair-wise distances), number of violations, person detection rate and false discovery rate for the people. Finally, the last row with filename 'ALL' contains the average of each column. All of the units are in mm.
 
 ## Distance Evaluation on Unannotated Data
 
