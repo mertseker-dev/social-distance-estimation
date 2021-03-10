@@ -93,10 +93,10 @@ ${project_dir}/
 
 ## Dataset & Annotations
 
-- Dataset: 
+- **Dataset**: 
 We provide an annotated image dataset for testing purposes that can be used to evaluate our method and also any other social distance estimation method that can either output 3D location estimations for the people or the distance between the people. The images and the annotations can be downloaded from here: LINK. 
 
-- Annotations:
+- **Annotations**:
 
 Lorem ipsum
 
