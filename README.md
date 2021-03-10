@@ -3,8 +3,8 @@ This repository contains code and tutorial for automatic social distance estimat
 ## Contents
 1. [Getting Started](#getting-started)
 2. [Dataset & Annotations](#dataset-annotations)
-3. [Distance Evaluation on Annotated Data](#annotated)
-4. [Distance Evaluation on Unannotated Data](#unannotated)
+3. [Distance Evaluation on Annotated Data](#distance-evaluation-on-annotated-data)
+4. [Distance Evaluation on Unannotated Data](#distance-evaluation-on-unannotated-data)
 5. [Installation](#installation)
 6. [Quick Usage](#quick-usage)
 7. [Citation](#citation)
