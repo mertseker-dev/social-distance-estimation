@@ -95,7 +95,7 @@ ${project_dir}/
 ## Dataset and Annotations
 
 - **Dataset**: 
-We provide an annotated image dataset for testing purposes that can be used to evaluate our method and also any other social distance estimation method that can either output 3D location estimations for the people or the distance between the people. The images and the annotations can be downloaded from here: LINK. 
+We provide an annotated image dataset for testing purposes that can be used to evaluate our method and also any other social distance estimation method that can output either 3D location estimations for the people or the distance between the people. The images and the annotations can be downloaded from here: LINK. 
 
 - **Annotations**:
 The annotations are found in 3 seperate .csv files: body_pixel_locations.csv, camera_locations_photoshoot_identifiers.csv and ground_truth_locations.csv. Please download these .csv files from the link above or from this page, note that they should be under a directory named 'labels' under your main project directory. Refer to the project directory schema above in [Getting Started](#getting-started) for clarity.  
@@ -147,3 +147,12 @@ It is possible to add your own images to the dataset. Please follow the followin
 New photo shoots, i.e., new settings of people, must be identified with a unique integer identifier. For any photo shoot, the real world locations of the people should stay the same in all the photos. There may be pictures taken from different camera locations. Person and camera tags should start with a P and C letter, respectively, followed by a unique identifier integer. Person and camera location tags must be consistent within a given photo shoot, however repeated tags in different photo shoots are allowed. This means that two different people or camera tags could be the same as long as they belong to a different photo shoot. At least 1 of 4 body parts (center of the eyes, shoulders, torso, head) of the people in the images must be annotated in terms of pixel locations.
 
 After adding the annotations to the three .csv files under the folder 'labels' by following this format, you can follow the directions in [Distance Evaluation on Annotated Data](#distance-evaluation-on-annotated-data) to evaluate your images.
+
+
+## Testing Your Own Method
+
+If you have your own method that can output 3D location estimations for the people or the distance between the people in images, you may evaluate your method by using our dataset (download link in [Dataset and Annotations](#dataset-and-annotations). You may also add your own images for evaluation, but be sure to correctly annotate each image by following the directions in  [Adding Your Own Annotated Images](#adding-your-own-annotated-images). Your method should be able to provide the pixel location of at least 1 of the 4 following body parts for each detected person: center of eyes, torso, shoulders or head. These pixel locations are required in order to match the automatically detected people with the annotated people.
+
+All of the necessary code for automatically evaluating your own method on our dataset or on your own annotated images can be found in the file 'automatic_evaluation_API.py'
+
+If your method outputs 3D location estimations for each detected people, you may use the function *automatic_evaluate()*
