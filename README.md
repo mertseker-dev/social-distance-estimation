@@ -5,9 +5,10 @@ This repository contains code and tutorial for automatic social distance estimat
 2. [Dataset and Annotations](#dataset-and-annotations)
 3. [Distance Evaluation on Annotated Data](#distance-evaluation-on-annotated-data)
 4. [Distance Evaluation on Unannotated Data](#distance-evaluation-on-unannotated-data)
-5. [Installation](#installation)
-6. [Quick Usage](#quick-usage)
-7. [Citation](#citation)
+5. [Adding Your Own Annotated Images](#adding-your-own-annotated-images)
+6. [Installation](#installation)
+7. [Quick Usage](#quick-usage)
+8. [Citation](#citation)
 
 ## Getting Started
 The code requires the following libraries to be installed:
@@ -136,3 +137,7 @@ Explanations for the parameters are the same as above. Note that SENSOR_WIDTH an
 
 ### Output format
 The outputs of the evaluation will automatically be written in a csv. file with a unique timestamp name under the folder "outputs_unlabeled_data". The naming format of the files are: "YYYYMMDD-HHMMSS.csv". The output file contains the following information for each image: filename, number of detected people, every estimated pair-wise distance, average estimated pair-wise distance and number of violations. Finally, the last row with filename 'ALL' contains the average of each column. All of the units are in mm.
+
+## Adding Your Own Annotated Images
+
+It is possible to add your own images to the dataset. Please follow the following annotation format and add the necessary information for each image in all three .csv files under the folder 'labels'.
