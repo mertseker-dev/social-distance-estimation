@@ -2,11 +2,12 @@
 This repository contains code and tutorial for automatic social distance estimation from single RGB images by using YOLOv4 object detector and OpenPose human pose estimator. 
 ## Contents
 1. [Getting Started](#getting-started)
-1. [Dataset](#dataset)
-2. [Features](#features)
-3. [Installation](#installation)
-4. [Quick Usage](#quick-usage)
-5. [Citation](#citation)
+2. [Dataset & Annotations](#dataset)
+3. [Distance Evaluation on Annotated Data](#annotated)
+4. [Distance Evaluation on Unannotated Data](#unannotated)
+5. [Installation](#installation)
+6. [Quick Usage](#quick-usage)
+7. [Citation](#citation)
 
 ## Getting Started
 The code requires the following libraries to be installed:
@@ -90,6 +91,19 @@ ${project_dir}/
 ├── VCRUNTIME140.dll
 ```
 
-## Dataset
+## Dataset & Annotations
 
-We provide an annotated dataset for testing purposes that can be used to evaluate our method and also any other social distance estimation method that can either output 3D location estimations for the people or the distance between the people.
+- Dataset: 
+We provide an annotated image dataset for testing purposes that can be used to evaluate our method and also any other social distance estimation method that can either output 3D location estimations for the people or the distance between the people. The images and the annotations can be downloaded from here: LINK. 
+
+- Annotations:
+
+Lorem ipsum
+
+
+
+## Distance Evaluation on Annotated Data
+
+
+
+
