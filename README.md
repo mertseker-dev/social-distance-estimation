@@ -6,7 +6,7 @@ This repository contains code and tutorial for automatic social distance estimat
 3. [Distance Evaluation on Annotated Data](#distance-evaluation-on-annotated-data)
 4. [Distance Evaluation on Unannotated Data](#distance-evaluation-on-unannotated-data)
 5. [Adding Your Own Annotated Images](#adding-your-own-annotated-images)
-6. [Installation](#installation)
+6. [Testing Your Own Method](#testing-your-own-method)
 7. [Quick Usage](#quick-usage)
 8. [Citation](#citation)
 
