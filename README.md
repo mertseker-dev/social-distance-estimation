@@ -1,5 +1,5 @@
 # social-distance-estimation
-This repository contains code and tutorial for automatic social distance estimation from single RGB images by using YOLOv4 object detector and OpenPose human pose estimator. 
+This repository contains code and tutorial for the paper [Automatic Social Distance Estimation From Images: Performance Evaluation, Test Benchmark, and Algorithm](https://arxiv.org/abs/2103.06759). 
 ## Contents
 1. [Getting Started](#getting-started)
 2. [Dataset and Annotations](#dataset-and-annotations)
@@ -9,6 +9,7 @@ This repository contains code and tutorial for automatic social distance estimat
 6. [Testing Your Own Method](#testing-your-own-method)
 7. [Results](#results)
 8. [References](#references)
+9. [Citation] (#citation)
 
 
 ## Getting Started
@@ -167,3 +168,16 @@ Out of all the detected people, our method was able to achieve a 28.8% average e
 
 - YOLOv4: https://github.com/AlexeyAB/darknet
 - OpenPose: https://github.com/CMU-Perceptual-Computing-Lab/openpose
+
+## Citation
+
+Please cite the following paper ([Automatic Social Distance Estimation From Images: Performance Evaluation, Test Benchmark, and Algorithm](https://arxiv.org/abs/2103.06759)) if you wish to use this work in your publications.
+
+@misc{seker2021automatic,
+      title={Automatic Social Distance Estimation From Images: Performance Evaluation, Test Benchmark, and Algorithm}, 
+      author={Mert Seker and Anssi Männistö and Alexandros Iosifidis and Jenni Raitoharju},
+      year={2021},
+      eprint={2103.06759},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
